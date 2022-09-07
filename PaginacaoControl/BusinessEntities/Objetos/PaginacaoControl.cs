@@ -16,7 +16,8 @@ namespace PaginacaoControl.BusinessEntities.Objetos
 
         public PaginacaoControl()
         {
-
+            _itens = new List<T>();
+            ItensFormatados = new List<T>();
         }
 
         public PaginacaoControl(IEnumerable<T> itens, int quantidadePorPagina)
@@ -36,8 +37,12 @@ namespace PaginacaoControl.BusinessEntities.Objetos
         {
             get
             {
+                if (_itens == null)
+                    return 0;
+
                 return _itens.Count();
             }
+            set { TotalItemCount = value; }
         }
 
         /// <summary>
