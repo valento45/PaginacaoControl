@@ -172,5 +172,15 @@ namespace PaginacaoControl.BusinessEntities.Objetos
             PrimeiraPagina();
 
         }
+
+        public void SetItens(IEnumerable<T> itens)
+        {
+            _itens = itens;
+        }
+
+        public void SetPageSize(int value)
+        {
+            PageSize = value;
+        }
     }
 }
