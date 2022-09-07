@@ -4,6 +4,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Paginacao.Control.MT</Title>
+    <PackageId>Paginacao.Control.IHMC</PackageId>
+    <Authors>Igor Helio Martins de Carvalho</Authors>
+    <Product>Paginacao.Control.MT</Product>
+    <Description>Controle e paginação de dados</Description>
+    <Version>6.0.0</Version>
   </PropertyGroup>
 
 </Project>
